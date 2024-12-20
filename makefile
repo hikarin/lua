@@ -71,12 +71,12 @@ LOCAL = $(TESTS) $(CWARNS)
 
 # enable Linux goodies
 MYCFLAGS= $(LOCAL) -std=c99 -DLUA_USE_LINUX -DLUA_USE_READLINE
-MYLDFLAGS= $(LOCAL) -Wl,-E
+MYLDFLAGS= $(LOCAL) -Wl
 MYLIBS= -ldl -lreadline
 
 
 CC= gcc
-CFLAGS= -Wall -O2 $(MYCFLAGS) -fno-stack-protector -fno-common -march=native
+CFLAGS= -Wall -O2 $(MYCFLAGS) -fno-stack-protector -fno-common
 AR= ar rc
 RANLIB= ranlib
 RM= rm -f
