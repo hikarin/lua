@@ -73,12 +73,12 @@ LOCAL = $(TESTS) $(CWARNS)
 # For C89, "-std=c89 -DLUA_USE_C89"
 # Note that Linux/Posix options are not compatible with C89
 MYCFLAGS= $(LOCAL) -std=c99 -DLUA_USE_LINUX
-MYLDFLAGS= $(LOCAL) -Wl,-E
+MYLDFLAGS= $(LOCAL) -Wl
 MYLIBS= -ldl
 
 
 CC= gcc
-CFLAGS= -Wall -O2 $(MYCFLAGS) -fno-stack-protector -fno-common -march=native
+CFLAGS= -Wall -O2 $(MYCFLAGS) -fno-stack-protector -fno-common
 AR= ar rc
 RANLIB= ranlib
 RM= rm -f
