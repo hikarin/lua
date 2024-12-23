@@ -1,0 +1,6 @@
+- Goal
+-- Copy GC
+-- Mark Compact GC
+
+- Garbage Collection in Lua
+https://www.lua.org/wshop18/Ierusalimschy.pdf
